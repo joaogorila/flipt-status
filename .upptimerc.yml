@@ -1,0 +1,86 @@
+# Upptime config — Status Page do Flipt
+# https://upptime.js.org/docs/configuration
+
+owner: joaogorila
+repo: flipt-status
+
+sites:
+  - name: Backend API (Railway)
+    url: https://api.flipt.com.br/api/health
+    expectedStatusCodes:
+      - 200
+      - 401  # /api/health pode exigir auth — basta retornar resposta http válida
+  - name: Frontend (Vercel)
+    url: https://app.flipt.com.br
+    expectedStatusCodes:
+      - 200
+  - name: WhatsApp QR / Evolution API
+    url: https://evolution-api-production-ac01.up.railway.app
+    expectedStatusCodes:
+      - 200
+      - 404  # Evolution API retorna info na raiz; aceitar 404 como vivo
+  - name: Meilisearch
+    url: https://meilisearch-production-d32f.up.railway.app/health
+    expectedStatusCodes:
+      - 200
+  - name: Telnyx API (provedor de voz)
+    url: https://api.telnyx.com/v2/
+    expectedStatusCodes:
+      - 200
+      - 401  # exige auth — 401 indica que tá vivo
+  - name: Disparo Pro Voice
+    url: https://gateway.disparopro.com.br/voice/v1/
+    expectedStatusCodes:
+      - 200
+      - 401
+      - 404
+  - name: Disparo Pro SMS
+    url: https://apihttp.disparopro.com.br:8433/
+    expectedStatusCodes:
+      - 200
+      - 401
+      - 404
+
+# Página estilo Flipt
+status-website:
+  cname: status.flipt.com.br
+  name: Status do Flipt
+  introTitle: "**Status em tempo real** dos servidores do Flipt"
+  introMessage: |
+    Esta página mostra o status atual dos serviços que compõem a plataforma.
+    Atualiza automaticamente a cada 5 minutos.
+    Para incidentes em andamento, acompanhe a aba **Incidents** no topo.
+  navbar:
+    - title: Status
+      href: /
+    - title: Incidents
+      href: /issues
+    - title: Voltar pro app
+      href: https://app.flipt.com.br
+
+# Cron schedules
+workflowSchedule:
+  graphs: "0 0 * * *"        # Gráficos diários
+  responseTime: "0 23 * * *" # Resumo de response time
+  staticSite: "0 1 * * *"    # Rebuild estático
+  summary: "0 0 * * *"       # Resumo
+  updates: "0 3 * * *"       # Updates de dependências
+  updateTemplate: "0 0 1 * *"
+  uptime: "*/5 * * * *"      # Health checks a cada 5min
+
+# Notificações via Slack/email (futuro — desabilitado por enquanto)
+notifications: []
+
+# Salva últimos 90 dias de histórico
+i18n:
+  activeIncidents: Incidentes em andamento
+  allSystemsOperational: Tudo funcionando normalmente
+  degradedPerformance: Performance degradada
+  incident: Incidente
+  incidentReport: Relatório do incidente
+  incidents: Incidentes
+  partialOutage: Outage parcial
+  pastIncidents: Incidentes anteriores
+  totalOutage: Outage total
+  upLabel: Up
+  upmLabel: Disponibilidade
