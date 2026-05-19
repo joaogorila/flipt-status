@@ -13,15 +13,15 @@ A status page é o único lugar que **precisa funcionar quando tudo o resto cai*
 
 ## Serviços monitorados
 
-| Serviço | URL |
-|---|---|
-| Backend API (Railway) | https://api.flipt.com.br |
-| Frontend (Vercel) | https://app.flipt.com.br |
+| Serviço                 | URL                                                  |
+| ----------------------- | ---------------------------------------------------- |
+| Backend API (Railway)   | https://api.flipt.com.br                             |
+| Frontend (Vercel)       | https://app.flipt.com.br                             |
 | WhatsApp QR (Evolution) | https://evolution-api-production-ac01.up.railway.app |
-| Meilisearch | https://meilisearch-production-d32f.up.railway.app |
-| Telnyx (Voice) | https://api.telnyx.com |
-| Disparo Pro Voice | https://gateway.disparopro.com.br |
-| Disparo Pro SMS | https://apihttp.disparopro.com.br |
+| Meilisearch             | https://meilisearch-production-d32f.up.railway.app   |
+| Telnyx (Voice)          | https://api.telnyx.com                               |
+| Disparo Pro Voice       | https://gateway.disparopro.com.br                    |
+| Disparo Pro SMS         | https://apihttp.disparopro.com.br                    |
 
 ## Reportar um incidente
 
