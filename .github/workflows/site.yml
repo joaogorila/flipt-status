@@ -41,6 +41,12 @@ jobs:
           echo "Nenhum dir de output encontrado, listando workspace:"
           find . -maxdepth 4 -type d \( -name "export" -o -name "_site" -o -name "build" \) 2>/dev/null | head -10
           exit 1
+      - name: Copy CNAME to site output
+        run: |
+          if [ -f CNAME ]; then
+            cp CNAME "${{ steps.locate.outputs.site_dir }}/CNAME"
+            echo "CNAME copied: $(cat CNAME)"
+          fi
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ${{ steps.locate.outputs.site_dir }}
