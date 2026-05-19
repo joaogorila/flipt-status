@@ -18,7 +18,7 @@ permissions:
   id-token: write
 
 jobs:
-  release:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -27,3 +27,30 @@ jobs:
           command: "site"
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
+      - name: Locate generated site
+        id: locate
+        run: |
+          for d in "site/__sapper__/export" "__sapper__/export" "_site"; do
+            if [ -d "$d" ]; then
+              echo "found at $d"
+              echo "site_dir=$d" >> $GITHUB_OUTPUT
+              ls -la "$d" | head -20
+              exit 0
+            fi
+          done
+          echo "Nenhum dir de output encontrado, listando workspace:"
+          find . -maxdepth 4 -type d \( -name "export" -o -name "_site" -o -name "build" \) 2>/dev/null | head -10
+          exit 1
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ steps.locate.outputs.site_dir }}
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
