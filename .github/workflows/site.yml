@@ -12,10 +12,16 @@ on:
     paths:
       - ".upptimerc.yml"
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - uses: upptime/uptime-monitor@master
         with:
           command: "site"
