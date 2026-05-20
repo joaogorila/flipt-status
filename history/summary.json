@@ -5,18 +5,19 @@
     "icon": "https://icons.duckduckgo.com/ip3/api.flipt.com.br.ico",
     "slug": "backend-api-railway",
     "status": "down",
-    "uptime": "36.84%",
-    "uptimeDay": "36.84%",
-    "uptimeWeek": "36.84%",
-    "uptimeMonth": "36.84%",
-    "uptimeYear": "36.84%",
+    "uptime": "0.10%",
+    "uptimeDay": "0.10%",
+    "uptimeWeek": "0.10%",
+    "uptimeMonth": "0.10%",
+    "uptimeYear": "0.10%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-05-19": 1
+      "2026-05-20": 637,
+      "2026-05-19": 63
     }
   },
   {
@@ -60,19 +61,20 @@
     "url": "https://meilisearch-production-d32f.up.railway.app/health",
     "icon": "https://icons.duckduckgo.com/ip3/meilisearch-production-d32f.up.railway.app.ico",
     "slug": "meilisearch",
-    "status": "down",
-    "uptime": "70.83%",
-    "uptimeDay": "70.83%",
-    "uptimeWeek": "70.83%",
-    "uptimeMonth": "70.83%",
-    "uptimeYear": "70.83%",
-    "time": 10315,
-    "timeDay": 10315,
-    "timeWeek": 10315,
-    "timeMonth": 10315,
-    "timeYear": 10315,
+    "status": "up",
+    "uptime": "0.15%",
+    "uptimeDay": "0.15%",
+    "uptimeWeek": "0.15%",
+    "uptimeMonth": "0.15%",
+    "uptimeYear": "0.15%",
+    "time": 5178,
+    "timeDay": 5178,
+    "timeWeek": 5178,
+    "timeMonth": 5178,
+    "timeYear": 5178,
     "dailyMinutesDown": {
-      "2026-05-19": 0
+      "2026-05-20": 636,
+      "2026-05-19": 62
     }
   },
   {
@@ -81,18 +83,19 @@
     "icon": "https://icons.duckduckgo.com/ip3/api.telnyx.com.ico",
     "slug": "telnyx-api-provedor-de-voz",
     "status": "down",
-    "uptime": "70.90%",
-    "uptimeDay": "70.90%",
-    "uptimeWeek": "70.90%",
-    "uptimeMonth": "70.90%",
-    "uptimeYear": "70.90%",
+    "uptime": "0.03%",
+    "uptimeDay": "0.03%",
+    "uptimeWeek": "0.03%",
+    "uptimeMonth": "0.03%",
+    "uptimeYear": "0.03%",
     "time": 37,
     "timeDay": 37,
     "timeWeek": 37,
     "timeMonth": 37,
     "timeYear": 37,
     "dailyMinutesDown": {
-      "2026-05-19": 0
+      "2026-05-20": 637,
+      "2026-05-19": 62
     }
   },
   {
