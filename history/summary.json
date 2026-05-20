@@ -16,7 +16,7 @@
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-05-20": 637,
+      "2026-05-20": 639,
       "2026-05-19": 63
     }
   },
@@ -31,11 +31,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 160,
-    "timeDay": 160,
-    "timeWeek": 160,
-    "timeMonth": 160,
-    "timeYear": 160,
+    "time": 154,
+    "timeDay": 154,
+    "timeWeek": 154,
+    "timeMonth": 154,
+    "timeYear": 154,
     "dailyMinutesDown": {}
   },
   {
@@ -49,11 +49,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 10624,
-    "timeDay": 10624,
-    "timeWeek": 10624,
-    "timeMonth": 10624,
-    "timeYear": 10624,
+    "time": 5415,
+    "timeDay": 5415,
+    "timeWeek": 5415,
+    "timeMonth": 5415,
+    "timeYear": 5415,
     "dailyMinutesDown": {}
   },
   {
@@ -62,16 +62,16 @@
     "icon": "https://icons.duckduckgo.com/ip3/meilisearch-production-d32f.up.railway.app.ico",
     "slug": "meilisearch",
     "status": "up",
-    "uptime": "0.15%",
-    "uptimeDay": "0.15%",
-    "uptimeWeek": "0.15%",
-    "uptimeMonth": "0.15%",
-    "uptimeYear": "0.15%",
-    "time": 5178,
-    "timeDay": 5178,
-    "timeWeek": 5178,
-    "timeMonth": 5178,
-    "timeYear": 5178,
+    "uptime": "0.55%",
+    "uptimeDay": "0.55%",
+    "uptimeWeek": "0.55%",
+    "uptimeMonth": "0.55%",
+    "uptimeYear": "0.55%",
+    "time": 3506,
+    "timeDay": 3506,
+    "timeWeek": 3506,
+    "timeMonth": 3506,
+    "timeYear": 3506,
     "dailyMinutesDown": {
       "2026-05-20": 636,
       "2026-05-19": 62
@@ -88,13 +88,13 @@
     "uptimeWeek": "0.03%",
     "uptimeMonth": "0.03%",
     "uptimeYear": "0.03%",
-    "time": 37,
-    "timeDay": 37,
-    "timeWeek": 37,
-    "timeMonth": 37,
-    "timeYear": 37,
+    "time": 43,
+    "timeDay": 43,
+    "timeWeek": 43,
+    "timeMonth": 43,
+    "timeYear": 43,
     "dailyMinutesDown": {
-      "2026-05-20": 637,
+      "2026-05-20": 639,
       "2026-05-19": 62
     }
   },
@@ -109,11 +109,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 505,
-    "timeDay": 505,
-    "timeWeek": 505,
-    "timeMonth": 505,
-    "timeYear": 505,
+    "time": 510,
+    "timeDay": 510,
+    "timeWeek": 510,
+    "timeMonth": 510,
+    "timeYear": 510,
     "dailyMinutesDown": {}
   },
   {
@@ -127,11 +127,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 454,
-    "timeDay": 454,
-    "timeWeek": 454,
-    "timeMonth": 454,
-    "timeYear": 454,
+    "time": 470,
+    "timeDay": 470,
+    "timeWeek": 470,
+    "timeMonth": 470,
+    "timeYear": 470,
     "dailyMinutesDown": {}
   }
 ]
